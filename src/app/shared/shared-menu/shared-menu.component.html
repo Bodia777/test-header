@@ -1,0 +1,32 @@
+<section>
+<button
+    mat-button
+    routerLinkActive="active"
+    (click)="changeMenuStatus()"
+    class="menu_select transparentMatMenu"
+>{{ menuName$ | async }}
+        <span *ngIf="!isMenuOpened"
+        class="material-icons arrow">
+            arrow_drop_down
+        </span>
+        <span *ngIf="isMenuOpened"
+        class="material-icons arrow">
+            arrow_drop_up
+        </span>
+</button>
+<div class="togleMenu"
+[style.overflow]="isMenuOpened ? 'visible' : 'hidden'"
+(mouseleave)="closeMenu()"
+[style.height]="isMenuOpened ? menuHeight : '0px'"
+>
+    <a *ngFor="let option of list$ | async"
+        routerLink="{{option.link}}"
+        class="option_item"
+       (click)="closeMenu()"
+       routerLinkActive="active"
+       >{{ option.name }}
+    </a>
+</div>
+</section>
+
+

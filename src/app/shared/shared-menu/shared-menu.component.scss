@@ -1,0 +1,81 @@
+.menu_select {
+    height: 100%;
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.option_item {
+    background-color: #4876c3;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: none;
+    &:hover {
+        background-color: #1c2169;
+        color: #ffffff;
+    }
+}
+.active{
+    background-color: #fff;
+    color:  #4876c3;
+    border: 1px solid  #4876c3;
+    font-weight: 1000;
+    line-height: 40px;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.togleMenu{
+    height: 0px;
+    width: 100%;
+    border: none;
+    margin-top: 15px;
+}
+.arrow{
+    position: relative;
+    top: -2.5px;
+    font-size: 21px;
+}
+
+
+@media screen and (max-width: 1365px) {
+    .menu_select {
+        font-size: 14px;
+    }
+    .option_item {
+        font-size: 14px;
+    }
+    .arrow{
+        font-size: 18px;
+        margin-left: -2px;
+        top: -1.3px
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    section{
+        background-color: #4876c3;
+    }
+    .menu_select, .option_item{
+        width: 400px;
+    }
+}

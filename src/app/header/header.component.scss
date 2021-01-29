@@ -1,0 +1,334 @@
+.header{
+    width: 100%;
+    height: 56px;
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.25));
+    background-color: #4876c3;
+}
+.wrapper{
+    padding-left: 20px;
+    width: 1920px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    position: relative;
+}
+.menu, .search_small, .small_social {
+    display: none;
+}
+.logo{
+    position: relative;
+    width: 195px;
+    height: 35px;
+    margin-right: 81px;
+    span{
+        font-family: esqadero;
+        font-size: 26px;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: -0.8px;
+        line-height: 58px;
+    }
+    span:first-child{
+        color: #a71c43;
+    }
+}
+nav{
+    width: 710px;
+    display: flex;
+    justify-content: space-between;
+    padding-top:18px;
+}
+.label_fourth{
+    display: none;
+}
+.menuClass{
+    width: 100px;
+}
+    .search, .plus, .mail, .bell{
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .plus{
+        color: #fff;
+        margin-left: 20px;
+    }
+    .mail, .bell{
+        margin-right: 23px;
+        position:  relative;
+        color: #fff;
+        left: -40px;
+    }
+    .cursor{
+        position: absolute;
+        right: 9px;
+        bottom: -15px;
+    }
+    .note{
+        width: 13px;
+        height: 13px;
+        border-radius: 1px;
+        filter: drop-shadow(0px 3px 1.5px rgba(0,0,0,0.37));
+        background-color: #b71826;
+        color: #fff;
+        position: relative;
+        top: -19px;
+        right: 17px;
+        font-size: 10px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Roboto";
+    }
+.input_wrapper{
+    position: relative;
+}
+.search{
+        position: absolute;
+        top: -2px;
+        left: 9px;
+        color: #c1c1c1;
+        &:hover {
+            cursor: pointer
+        }
+}
+.searchPopup{
+    width: 420x;
+    height: 160px;
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.25));
+    padding: 16px 20px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    top: 51px;
+    left: 7px;
+}
+.search_input{
+    width: 710px;
+height: 40px;
+border-radius: 2px 0px 0px 2px;
+background-color: #ffffff;
+margin-top: 7px;
+border: none;
+padding-left: 37px;
+padding-right: 37px;
+outline: none;
+font-size: 13px;
+line-height: 19px;
+color: #111111;
+font-weight: 400;
+font-family: "Roboto";
+}
+.search_button{
+    width: 70px;
+    height: 40px;
+border-radius: 0px 2px 2px 0px;
+background-color: #ffc120;
+margin-top: 7px;
+border: none;
+color: #fff;
+}
+.dspl_flx_strt{
+    display: flex;
+    justify-content: flex-start;
+}
+label{
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.label{
+    margin-top: 7px;
+}
+.search_popup_checkboxes{
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 20px;
+}
+.new_row{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 14px;
+    right: 76px;
+    color: #444f62;
+    &:hover {
+        cursor: pointer
+    }
+}
+.autor{
+    font-size: 12px;
+    line-height: 22px;
+    color: #c0c0c0;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding-left: 10px;
+    width: 313px;
+height: 37px;
+border-radius: 2px;
+background-color: #ffffff;
+border: 1px solid #c4ced5;
+outline: none;
+}
+
+select{
+    margin-top: -8px;
+    width: 144px;
+    height: 37px;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    border: 1px solid #dadada;
+    font-size: 13px;
+    line-height: 21px;
+    color: #444444; 
+    font-weight: 400;
+    font-family: "Roboto";
+    padding: 0 13px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.mrgn_btm{
+    margin-bottom: 20px;
+}
+.icons{
+    position: absolute;
+    top: 0;
+    right: 9px;
+}
+.photo{
+    position: absolute;
+    top: 12px;
+    right: 25px;
+}
+#mine, #first, #second, #third, #fourth {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    background-color: #8fc04f;
+    filter: hue-rotate(240deg);
+    &:hover{
+        cursor: pointer;
+    }
+}
+#fourth {
+    display: none;
+}
+#mine{
+    margin-top: 10px;
+}
+.arrow{
+    color:#444444;
+    position: relative;
+    left: -22px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.checkbox_label{
+    margin-top: -2px;
+}
+
+
+
+@media screen and (max-width: 1919px) {
+    .logo{
+      margin-right: 46px;
+    }
+    .wrapper{
+        width: 1366px;
+    }
+    .plus{
+        margin-left: 6px;
+    }
+    .search{
+        margin-left: 26px;
+    }
+}
+@media screen and (max-width: 1365px) {
+    .wrapper{
+        width: 1024px;
+    }
+    .logo{
+        margin-right: 24px;
+        width: 146px;
+        span{
+            font-size: 19px;
+        }
+    }
+    .cursor {
+        bottom: -9px;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+    }
+    .search_input{
+        width: 504px;
+    }
+    .plus{
+        margin-left: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header{
+        filter: none;
+    }
+    .wrapper{
+        width: 414px;
+        padding-left: 8px;
+    }
+    .logo{
+        display: none;
+    }
+    .small_social{
+        display: block;
+    }
+    .large{
+        display: none;
+    }
+    .search_input{
+        width: 330px;
+    }
+    .plus{
+        display: none;
+    }
+    .icons_social_small{
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .mail, .bell {
+        position: static;
+    }
+    .photo{
+        position: relative;
+        top: -7px;
+    }
+    .searchPopup{
+        width: 390px;
+        height: 250px;
+    }
+    .autor{
+        width: 280px;
+    }
+    #fourth{
+        display: inline;
+    }
+    .new_row{
+        display: flex;
+    }
+    .search_popup_checkboxes{
+        display: block;
+     }
+     .label_fourth{
+         display: inline;
+     }
+}

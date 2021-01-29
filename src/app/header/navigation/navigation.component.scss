@@ -1,0 +1,221 @@
+:host{
+    position: absolute;
+    z-index: 1;
+    background-color: #4876c3;
+    padding-left: 7px;
+}
+nav{
+    width: 780px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top:8px;
+    height: 40px;
+    margin-top: 10px;
+}
+.navigation_small, .link_wrapper{
+    display: none;
+}
+.navigation_big{
+    display: flex;
+}
+.logo{
+    position: relative;
+    margin-top: -15px;
+    margin-right: 135px;
+    width: 180px;
+    height: 35px;
+    span{
+        font-family: esqadero;
+        font-size: 24px;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: -0.8px;
+        line-height: 58px;
+    }
+    span:first-child{
+        color: #a71c43;
+    }
+}
+.menuClass{
+    width: 100px
+}
+.links{
+    margin-right: 15px;
+}
+.menu_select {
+        background-color: #4876c3;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 21px;
+        height: 36px;
+        font-weight: 500;
+        font-family: "Roboto";
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        white-space: nowrap;
+        margin-right: 19px;
+    }
+    .asks, .favorites{
+        margin-left: -17px;
+    }
+    .visits{
+        margin-left: -19px;
+    }
+    .search, .plus, .mail, .bell{
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .search{
+    margin-left: 15px;
+    position: relative;
+    margin-top: -18px;
+    color: #fff;
+    &:hover {
+        cursor:pointer;
+    }
+    }
+.search_wrapper{
+    position: relative;
+}
+.with_remove{
+    overflow: hidden;
+    animation-duration: 500ms;
+    animation-name: hideNav;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideNav {
+    from {
+      width: 780px;
+    }
+    to {
+      width: 0px;
+    }
+}
+.with_show{
+    animation-duration: 500ms;
+    animation-name: showNav;
+    animation-fill-mode: forwards;
+    overflow: visible;
+}
+
+@keyframes showNav {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 780px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .links{
+        margin-right: 0;
+    }
+    .menu_select {
+        font-size: 14px;
+        margin-right: 4px;
+        overflow: visible;
+    }
+    .search{
+        margin-left: -10px;
+    }
+    nav{
+        width: 570px;
+    }
+    @keyframes hideNav {
+        from {
+          width: 570px;
+        }
+        to {
+          width: 0px;
+        }
+    }
+    @keyframes showNav {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 570px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .menu{
+        display: inline;
+        color: white;
+        margin-right: 20px;
+        margin-left: 12px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .navigation_small{
+        display: flex;
+        margin-left: -10px;
+    }
+    .navigation_big{
+        display: none;
+        margin-top: 100px;
+        position: absolute;
+        left: 1px;
+    }
+    .link_wrapper{
+        display: block;
+        width: 400px;
+        height: 35.8px;
+        background-color: #4876c3;
+        text-align: right;
+        margin: 17px 0px;
+        border: none;
+        outline: none;
+    }
+    .link_contacts{
+        background-color: #4876c3;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 21px;
+        height: 36px;
+        font-weight: 500;
+        font-family: "Roboto";
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        white-space: nowrap;
+        margin-right: 19px;
+    }
+    .menu_select{
+        display: none;
+    }
+    .cursor {
+        position: absolute;
+        bottom: -11px;
+        right: 9px;
+        width: 12px;
+        height: 13px;
+    }
+    nav{
+        width: 399px;
+    }
+    @keyframes hideNav {
+        from {
+          width: 399px;
+        }
+        to {
+          width: 0px;
+        }
+    }
+    @keyframes showNav {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 399px;
+        }
+    }
+}

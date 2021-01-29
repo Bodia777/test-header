@@ -1,0 +1,57 @@
+<section>
+    <nav #navigation>
+    <span class="navigation_small">
+    <span class="material-icons menu"
+    (click)="togleNavigationBig()">
+        menu
+    </span>
+    <div class="logo">
+        <span>t</span>
+        <span>ile.expert</span>
+        <img src="/assets/img/cursor.svg" alt="#" class="cursor">
+    </div>
+    </span>
+    <span class="navigation_big" #navigationBig>
+    <shared-link-menu
+    [menuName$]="linkMenu$"
+    [list$]="linkList$"
+    class="links"
+    ></shared-link-menu>
+    <section class="link_wrapper" [routerLink]="['/contacts']">
+        <a [routerLink]="['/contacts']"
+        routerLinkActive="active"
+        class="link_contacts"
+       >{{'appModule.headerComponent.contacts.name' | translate}}
+        </a>
+    </section>
+    <a [routerLink]="['/contacts']"
+    routerLinkActive="active"
+    class="menu_select"
+   >{{'appModule.headerComponent.contacts.name' | translate}}
+    </a>
+    <shared-link-menu
+    [menuName$]="tagsMenu$"
+    [list$]="tagsList$"
+    ></shared-link-menu>
+    <shared-link-menu
+    [menuName$]="asksMenu$"
+    [list$]="asksList$"
+    class="asks"
+    ></shared-link-menu>
+    <shared-link-menu
+    [menuName$]="favoritesMenu$"
+    [list$]="favoritesList$"
+    class="favorites"
+    ></shared-link-menu>
+    <shared-link-menu
+    [menuName$]="visitsMenu$"
+    [list$]="visitsList$"
+    class="visits"
+    ></shared-link-menu>
+</span>
+    <span class="material-icons search"
+    (click)="hideNavigation()">
+        search
+    </span>
+</nav>
+</section>

@@ -1,0 +1,85 @@
+{
+    "appModule": {
+        "headerComponent": {
+            "menuNameLinks": "Cсылки",
+            "menuOptionsinks": [ 
+                {
+                "name": "ссылка1",
+                "link": "/links/link1"
+                }, {
+                "name": "ссылка2",
+                "link": "/links/link2"
+                } 
+            ],
+            "contacts": {
+                "name": "Контакты"
+            },
+            "tags": {
+                "tagsName": "Теги",
+                "tagsOptions": [
+                    {
+                        "name": "тeг1",
+                        "link": "/tags/tag1"
+                    },
+                    {
+                        "name": "тeг2",
+                        "link": "/tags/tag2"
+                    }
+                ]
+            },
+            "asks": {
+                "asksName": "Просьбы",
+                "asksOptions": [
+                    {
+                        "name": "просьба1",
+                        "link": "/asks/ask1"
+                    },
+                    {
+                        "name": "просьба2",
+                        "link": "/asks/ask2"
+                    }
+                ]
+            },
+            "favorites": {
+                "favoritesName": "Избранное",
+                "favoritesOptions": [
+                    {
+                        "name": "избранное1",
+                        "link": "/favorites/favorite1"
+                    },
+                    {
+                        "name": "избранное2",
+                        "link": "/favorites/favorite2"
+                    }
+                ]
+            },
+            "visits": {
+                "visitsName": "Посещения",
+                "visitsOptions": [
+                    {
+                        "name": "посещение1",
+                        "link": "/visits/visit1"
+                    },
+                    {
+                        "name": "посещение2",
+                        "link": "/visits/visit2"
+                    }
+                ]
+            },
+            "searchButton": "найти",
+            "searchPopup": {
+                "checkbox": "мои",
+                "autor": "Автор",
+                "sort": "Сортировать по:",
+                "inputOption": "дате",
+                "inputOption2": "релевантности",
+                "downCheckboxes": {
+                    "first": "я учасник",
+                    "second": "в заголовке",
+                    "third": "строгий поиск",
+                    "fourth": "в контактах"
+                }
+            }
+        }
+    }
+}

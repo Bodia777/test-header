@@ -1,0 +1,90 @@
+<header>
+<section class="header">
+    <div class="wrapper">
+        <div class="logo">
+            <span>t</span>
+            <span>ile.expert</span>
+            <img src="/assets/img/cursor.svg" alt="#" class="cursor">
+        </div>
+        <div class="search_wrapper">
+            <app-navigation 
+            #navigationMenu
+            (openSearchInputEmitter)="openHeaderPopup()"
+            ></app-navigation>
+        </div>
+        <div class="input_wrapper" (mouseleave)="showNavigation()">
+            <span class="material-icons search">
+                search
+            </span>
+            <div class="searchPopup" 
+            #searchPopup
+            [style.display]="'none'">
+                <div class="dspl_flx_strt mrgn_btm">
+                    <input type="checkbox" name="" id="mine">
+                    <label class="label" for="mine">{{'appModule.headerComponent.searchPopup.checkbox' | translate}}</label>
+                    <input
+                     class="autor"
+                     placeholder="{{'appModule.headerComponent.searchPopup.autor' | translate}}">
+                </div>
+                <div class="dspl_flx_strt mrgn_btm">
+                    <label for="select">{{'appModule.headerComponent.searchPopup.sort' | translate}}</label>
+                    <select name="" id="select">
+                        <option value="optionDate" selected>{{'appModule.headerComponent.searchPopup.inputOption' | translate}}</option>
+                        <option value="optionRelevane">{{'appModule.headerComponent.searchPopup.inputOption2' | translate}}</option>
+                    </select>
+                        <span 
+                            class="material-icons arrow"
+                            >
+                            arrow_drop_down
+                        </span>
+                </div>
+                <div class="search_popup_checkboxes">
+                    <input type="checkbox" name="" id="first">
+                    <label class="checkbox_label" for="first">{{'appModule.headerComponent.searchPopup.downCheckboxes.first' | translate}}</label>
+                    <br class="new_row">
+                    <input type="checkbox" name="" id="second">
+                    <label class="checkbox_label" for="second">{{'appModule.headerComponent.searchPopup.downCheckboxes.second' | translate}}</label>
+                    <br class="new_row">
+                    <input type="checkbox" name="" id="fourth">
+                    <label class="checkbox_label label_fourth" for="fourth">{{'appModule.headerComponent.searchPopup.downCheckboxes.fourth' | translate}}</label>
+                    <br class="new_row">
+                    <input type="checkbox" name="" id="third">
+                    <label class="checkbox_label" for="third">{{'appModule.headerComponent.searchPopup.downCheckboxes.third' | translate}}</label>
+                </div>
+            </div>
+            <input type="text" class="search_input" #searchInput>
+            <span class="material-icons close">
+                close
+            </span>
+            <button class="search_button">{{'appModule.headerComponent.searchButton' | translate | uppercase }}</button>
+        </div>
+        <span class="material-icons plus">
+            add_circle
+        </span>
+        <div class="icons large">
+            <span class="material-icons mail">
+                mail_outline
+            </span>
+            <span class="material-icons bell">
+                notifications_none
+            <span class="note">18</span>
+        </span>
+        <img src="/assets/img/photo.svg" alt="#" class="photo">
+    </div>
+    </div>
+</section>
+<section class="small_social header">
+    <div class="wrapper">
+        <div class="icons_social_small">
+            <span class="material-icons mail">
+                mail_outline
+            </span>
+            <span class="material-icons bell">
+                notifications_none
+            <span class="note">18</span>
+        </span>
+        <img src="/assets/img/photo.svg" alt="#" class="photo">
+    </div>
+    </div>
+</section>
+</header>
